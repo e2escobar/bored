@@ -1,2 +1,2 @@
-# electric-eye
-The most advanced vigilant system (Learning purpose)  👁‍🗨
+# bored
+The most advanced app against boredom (Learning purpose) 
