@@ -1,7 +1,18 @@
 import React from 'react'
 
-export default function Button() {
+export default function Button(props) {
+
+  const handleClick = () => {
+    if(props.onClick) {
+      props.onClick()
+    }
+  }
+
   return (
-    <div>Esto sera un Boton 😍</div>
+    <button 
+      onClick={() => handleClick()} 
+      className={props.className}> 
+      {props.children} 
+    </button>
   )
 }
