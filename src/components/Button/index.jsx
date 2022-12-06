@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Button(props) {
+const  Button = (props) => {
 
   const handleClick = () => {
     if(props.onClick) {
@@ -16,3 +16,5 @@ export default function Button(props) {
     </button>
   )
 }
+
+export { Button}
