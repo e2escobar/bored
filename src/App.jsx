@@ -1,20 +1,19 @@
-import Button from "./components/Button"
+import { Action } from "./components/Action"
+import { Activity } from "./components/Activity"
+import { ActivitySelection } from "./components/ActivitySelection"
+
 
 function App() {
 
-  const otraCosa = () => {
-    console.log('click algo')
-  }
-
-  const subirCambios = () => {
-    console.log('subir cambios ⬆️')
-  }
 
   return (
-    <div className="App container">
-      <Button className="btn btn-primary" onClick={otraCosa} primary>Primary</Button>
-      <Button className="btn btn-outline btn-warning" onClick={subirCambios} secondary>Daniela</Button>
-    </div>
+    <>
+      <div className="p-20 my-9 mx-20 rounded-lg bg-stone-400 bg-fixed items-center justify-center">
+        <Activity />
+        <ActivitySelection />
+        <Action />
+      </div>
+    </>
   )
 }
 
