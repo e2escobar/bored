@@ -4,6 +4,7 @@ import { Select } from '../../components/Select'
 
 function ActivitySelection() {
 
+
   const mapPrices = {
     alto: 'minprice=0.7&maxprice=1',
     moderado: 'minprice=0.4&maxprice=0.6',
@@ -53,18 +54,21 @@ function ActivitySelection() {
   return (
     <div className='w-full flex justify-around m-5'>
       <Select
+        type={type}
         onChange={(val) => setType(val)} 
         options={activities.type}
         name="Types"
         label="Tipo de actividad"
       />
       <Select
+        participants={participants}
         onChange={(val) => setParticipants(val)} 
         options={activities.participants}
         name="Participants"
         label="Número de participantes"
       />
       <Select 
+        prices={prices}
         onChange={(val) => setPrices(val)} 
         options={activities.prices}
         name="Price"
