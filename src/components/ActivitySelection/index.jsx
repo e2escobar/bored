@@ -5,12 +5,12 @@ import { Select } from '../../components/Select'
 function ActivitySelection() {
 
 
-  const mapPrices = {
-    alto: 'minprice=0.7&maxprice=1',
-    moderado: 'minprice=0.4&maxprice=0.6',
-    bajo: 'minprice=0.1&maxprice=0.3',
-    gratis: 'price=0',
-  }
+  // const mapPrices = {
+  //   alto: 'minprice=0.7&maxprice=1',
+  //   moderado: 'minprice=0.4&maxprice=0.6',
+  //   bajo: 'minprice=0.1&maxprice=0.3',
+  //   gratis: 'price=0',
+  // }
 
  
 
