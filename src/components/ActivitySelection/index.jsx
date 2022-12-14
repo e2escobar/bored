@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Select } from '../../components/Select'
 
 
-function ActivitySelection() {
+function ActivitySelection({onChange}) {
 
 
   // const mapPrices = {
@@ -46,30 +46,23 @@ function ActivitySelection() {
 
   }
 
-  const [type, setType] = React.useState('')
-  const [participants, setParticipants] = React.useState(0)
-  const [prices, setPrices] = React.useState('')
-
 
   return (
     <div className='w-full flex justify-around m-5'>
       <Select
-        type={type}
-        onChange={(val) => setType(val)} 
+        onChange={(val) => onChange({val, key: 'type'})} 
         options={activities.type}
         name="Types"
         label="Tipo de actividad"
       />
       <Select
-        participants={participants}
-        onChange={(val) => setParticipants(val)} 
+        onChange={(val) => onChange({val, key: 'participants'})} 
         options={activities.participants}
         name="Participants"
         label="Número de participantes"
       />
       <Select 
-        prices={prices}
-        onChange={(val) => setPrices(val)} 
+        onChange={(val) => onChange({val, key: 'prices'})} 
         options={activities.prices}
         name="Price"
         label="Rango de Precios"
